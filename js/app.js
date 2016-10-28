@@ -29,9 +29,13 @@ document.addEventListener("DOMContentLoaded", function() {
     var duck2 = "./images/duck2.gif";
     var flamingo = "./images/flamingo1.gif";
     var horse = container.querySelector("#horse");
-    horse.ondragstart = function() { return false; }; // Disable dragging an image
+    horse.ondragstart = function() {
+        return false;
+    }; // Disable dragging an image
     var sheep = container.querySelector("#sheep");
-    sheep.ondragstart = function() { return false; };
+    sheep.ondragstart = function() {
+        return false;
+    };
     //variables for functions
     var hits = 0;
     var shots = 0;
@@ -196,8 +200,9 @@ document.addEventListener("DOMContentLoaded", function() {
         allBirds = this.querySelectorAll("img.fly");
         var allBirdslength = allBirds.length;
         for (var i = 0; i < allBirdslength; i++) {
-            console.log(allBirds[i])
-            allBirds[i].ondragstart = function() { return false; }; // Disable dragging an image
+            allBirds[i].ondragstart = function() {
+                return false;
+            }; // Disable dragging an image
             var birdBounding = allBirds[i].getBoundingClientRect();
             if ((event.clientX >= birdBounding.left && event.clientX <= birdBounding.right) && (event.clientY >= birdBounding.top && event.clientY <= birdBounding.bottom)) {
                 hits++;
