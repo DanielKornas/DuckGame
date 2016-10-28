@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple DUCK GAME</title>
+    <meta name="description" content="Simple duck game. Shoot all ducks!">
+    <meta name="keywords" content="duck game,duck,ducks,duckgame,simple duck game">
+    <meta name="author" content="Daniel Kornas">
+    <link href="style/main.nested.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+    <div class="gameArea">
+        <h3 id="timeBox"></h3>
+        <h3 id="scoreBox">Score: 0</h3>
+        <h4 id="shotsBox"></h4>
+        <h4 id="accuracyBox"></h4>
+        <div id="sun"></div>
+        <div id="container">
+            <div id="infoBox">
+                <h1>duck game</h1>
+                <h2>shoot them all<span>/only birds/</span></h2>
+                <form>
+                    USERNAME <input type="text" name="username" id="username">
+                </form>
+                <h5 id="volumeBox">Sound on</h5>
+                <h5 id="scenery">scenery</h5>
+                <h5 onclick="showScores();">Scoreboard</h5>
+                <h5 id="credits" onclick="showCredits();">Credits</h5>
+                <h5 class="start">Play</h5>
+                <div class="contentBox" id="scoreboardBox">
+                    <div class="closeBox" id="closeScores">X</div>
+                    <p class="topPlayers">top 10 players</p>
+                    <ul id="scoreboardlist">
+                    </ul>
+                </div>
+                <div id="creditsBox" class="contentBox">
+                    <div class="closeBox" id="closeCredits">X</div>
+                    <div id="creditsTxt">
+                        <p class="author">author: <a href="#" title="HIRE ME!" target="_blank"><strong>DANIEL KORNAS</strong></a></p>
+                        <p class="project">project info: <a href="#" title="js, html, sass code" target="_blank">github</a></p>
+                        <p>graphics:<br>
+                            <a href="http://www.flaticon.com/free-icon/cloud_218739" target="_blank">flaticon.com</a><br>
+                            <a href="http://www.flaticon.com/free-icon/clouds_146589" target="_blank">flaticon.com</a><br>
+                        </p>
+                        <p>gifs:<br>
+                            <a href="http://heathersanimations.com/birds/7199.gif" target="_blank">heathersanimations.com</a><br>
+                            <a href="http://heathersanimations.com/birds/flamingo90.gif" target="_blank">heathersanimations.com</a><br>
+                            <a href="http://www.picgifs.com/mini-graphics/animals/mini-graphics-animals-141753-901256/" target="_blank">picgifs.com</a><br>
+                            <a href="http://www.picgifs.com/mini-graphics/animals/mini-graphics-animals-949881-901595/" target="_blank">picgifs.com</a>
+                        </p>
+                        <p>sounds:<br>
+                            <a href="http://www.freesound.org/people/Cabeeno%20Rossley/sounds/126418/" target="_blank">freesound.org</a><br>
+                            <a href="https://www.freesound.org/people/SoundEffectsPodcast_com/sounds/256091/" target="_blank">freesound.org</a><br>
+                            <a href="http://www.freesound.org/people/KevinVG207/sounds/331912/" target="_blank">freesound.org</a><br>
+                            <a href="http://www.noiseforfun.com/2014-sound-effects/yahoo/" target="_blank">noiseforfun.com</a><br>
+                            <a href="http://www.noiseforfun.com/2012-sound-effects/silent-gun/" target="_blank">noiseforfun.com </a><br>
+                            <a href="http://www.noiseforfun.com/2012-sound-effects/success/" target="_blank">noiseforfun.com</a>
+                        </p>
+                        <p>cursor:<br>
+                            <a href="http://www.rw-designer.com/cursor-set/assault-rifle" target="_blank">rw-designer.com</a>
+                        </p>
+                        <p>font:<br>
+                            <a href="https://fonts.google.com/specimen/Orbitron" target="_blank">google fonts</a>
+                        </p>
+                        <p>have fun</p>
+                    </div>
+                </div>
+            </div>
+            <div id="grass">
+                <img src="./images/horse.gif" alt="Walking horse" id="horse">
+                <img src="./images/sheep.gif" alt="Walking sheep" id="sheep">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyC2ot7SNn1Clmrs69D6Dr14OmSIwJ-0Ays",
+        authDomain: "ducks-5f708.firebaseapp.com",
+        databaseURL: "https://ducks-5f708.firebaseio.com",
+        storageBucket: "ducks-5f708.appspot.com",
+        messagingSenderId: "671211196404"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="js/app.js"></script>
+
+</html>

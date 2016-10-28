@@ -1,0 +1,13 @@
+@mixin simpleAnimation($args...){
+    -webkit-animation: $args;
+    -moz-animation: $args;
+    animation:$args;
+}
+@mixin infiniteAnimation($timeAndclassName...) {
+    -webkit-animation: $timeAndclassName infinite;
+    -moz-animation: $timeAndclassName infinite;
+    animation:$timeAndclassName infinite;
+}
+$mainBluecolor: #97cdf7;
+$infocolor: #fff;
+$mainBrowncolor: #795548;
