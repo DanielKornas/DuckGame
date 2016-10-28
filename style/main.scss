@@ -446,6 +446,13 @@ span.minusPoint {
     bottom: 0;
     left: 0;
 }
+// avoid select images via user
+*.unselectable {
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
 @keyframes flyLeft {
     0% {
         animation-timing-function: ease;
