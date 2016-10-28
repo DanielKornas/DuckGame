@@ -1,7 +1,9 @@
 # DuckGame
 Simple JS, HTML, CSS game using Firebase to save and load data.
 Shoot the birds in 40 seconds and compare your score with the best players!
+
 ## Features
+
 * Choose scenery (day or night)
 * Disable or enable all sounds
 * Shoot ducks and get 1 point
@@ -11,6 +13,15 @@ Shoot the birds in 40 seconds and compare your score with the best players!
 * **Check scoreboard**
 * See your game result (hits, shots and accuracy)
 * Play again without reload page
+
+## Instalation
+Compile SASS to CSS (for example using Atom editor).
+
+## Technologies
+* JavaScript (pure)
+* SASS
+* HTML5
+* Firebase
 
 ## Licence and demo
 
