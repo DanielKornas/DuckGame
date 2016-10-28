@@ -15,7 +15,7 @@ Shoot the birds in 40 seconds and compare your score with the best players!
 * Play again without reload page
 
 ## Instalation
-Compile SASS to CSS (for example using Atom editor).
+Compile SASS to CSS (for example using Atom editor). Configure your own Firebase database or use mine.
 
 ## Technologies
 * JavaScript (pure)
