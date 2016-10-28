@@ -28,7 +28,7 @@ body {
     @include infiniteAnimation(6s cloud2 linear);
     background: url('../images/cloud3.png') repeat-x 0 48%;
     background-size: 150px 72.75px;
-    cursor: url('../images/cursor.cur'), url("http://elander.pl/birds/images/cursor.cur"), pointer;
+    cursor: url('../images/cursor.cur'), url("https://danielkornas.github.io/DuckGame/images/cursor.cur"), pointer;
     overflow: hidden;
     position: relative;
 
@@ -534,7 +534,7 @@ span.minusPoint {
 
 .backSwitch {
     background: rgba(#020828, 0.86);
-    cursor: url('../images/cursor2.cur'), url("http://elander.pl/birds/images/cursor2.cur")pointer!important;
+    cursor: url('../images/cursor2.cur'), url("https://danielkornas.github.io/DuckGame/images/cursor2.cur"), pointer!important;
 
     #sun {
         background: none;
