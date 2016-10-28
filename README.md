@@ -13,3 +13,4 @@ Shoot the birds in 40 seconds and compare your score with the best players!
 * Play again without reload page
 ##Licence and demo
 Please feel free to use my code. Any improvement suggestions would be very much appreciated.
+Demo: https://danielkornas.github.io/DuckGame/
